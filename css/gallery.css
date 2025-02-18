@@ -1,0 +1,93 @@
+/* CSS - Gallery Page - Created by Juan Jacobo Florez Monroy/8857381 */
+/*bxSlider*/
+.bx-wrapper {
+	max-height: 1000px !important;
+}
+
+.bx-wrapper img {
+	width: 100% !important;
+	max-height: 1000px !important;
+}
+
+/* Increase font size for captions */
+.bxslider .bx-caption {
+	font-size: 30px;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+/*Collage*/
+#collage {
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"firstimage secondimage secondimage"
+		"thirdimage thirdimage fourthimage"
+		"fifhtimage fifhtimage fifhtimage"
+		"video video video";
+}
+
+/*Defining grid areas*/
+.grid_image_type1 {
+	grid-area: firstimage;
+}
+
+.grid_image_type2 {
+	grid-area: secondimage;
+}
+
+.grid_image_type3 {
+	grid-area: thirdimage;
+}
+
+.grid_image_type4 {
+	grid-area: fourthimage;
+}
+
+.grid_image_type5 {
+	grid-area: fifhtimage;
+}
+
+.grid_image_type6 {
+	grid-area: video;
+}
+
+.div_img_collage {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 205%;
+	font-weight: bold;
+	transition: filter 1s ease;
+}
+
+.text_centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	display: none;
+}
+
+.img_hover {
+	filter: blur(3px);
+}
+
+.img_collage,
+.img_collage2,
+.vid_collage {
+	width: 100%;
+	height: 100%;
+	/*display: block;*/
+}
+
+.vid_collage {	
+	display: block;
+}
+
+footer {
+	margin: 0px;
+}

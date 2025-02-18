@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/reserve.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"
+    />
+    <title>Da Munchies - Reserve</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img
+          src="../images/da_munchies2.png"
+          id="main-logo"
+          alt="munchies logo"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a class="active" href="reserve.html">Reserve a Table</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-img" id="reserve-img">
+        <div class="intro-content">
+          <h1>Reserve a Table</h1>
+        </div>
+      </section>
+      <section id="res">
+        <h2>Convenient Reservations Just For You</h2>
+        <hr class="u-line" />
+        <div class="reserve-card">
+          <form
+            action="reserve-confirm.html"
+            method="get"
+            id="res-form"
+            name="res-form"
+          >
+            <div class="form-content">
+              <fieldset>
+                <label for="name">Name</label>
+                <input class="inp" type="text" id="name" name="name" />
+                <span id="err"></span>
+              </fieldset>
+              <fieldset>
+                <label for="email">Email</label>
+                <input
+                  class="inp"
+                  type="email"
+                  id="email"
+                  name="email"
+                  pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b"
+                  placeholder="valid@mail.com"
+                />
+                <span id="err"></span>
+              </fieldset>
+              <fieldset>
+                <label for="phone">Phone Number</label>
+                <input
+                  class="inp"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="999-999-9999"
+                />
+                <span id="err"></span>
+              </fieldset>
+              <fieldset>
+                <label for="num-people">Number of Persons</label>
+                <select name="num-people" id="num-people">
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5+ people</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <label for="datepicker">Date</label>
+                <input class="inp" type="text" id="datepicker" name="date" />
+                <span id="err"></span>
+              </fieldset>
+              <fieldset>
+                <label for="time">Time</label>
+                <input
+                  type="text"
+                  id="time"
+                  class="timepicker inp"
+                  name="time"
+                />
+                <span id="err"></span>
+              </fieldset>
+            </div>
+            <div id="btns">
+              <input type="submit" id="btn-submit" value="SUBMIT" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="f-content">
+        <h3>About</h3>
+        <p>
+          Our meals are a fusion of different cuisines, each one carefully
+          crafted to satisfy your taste buds like never before.
+        </p>
+      </div>
+      <div class="f-content">
+        <h3>Quick Menu</h3>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="reserve.html">Reserve a Table</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="f-content">
+        <h3>Social Media</h3>
+        <ul class="socials">
+          <li>
+            <a href="www.facebook.com"
+              ><img src="../images/facebook.png" alt="facebook logo"
+            /></a>
+          </li>
+          <li>
+            <a href="www.twitter.com"
+              ><img src="../images/twitter.png" alt="twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a href="www.instagram.com"
+              ><img src="../images/instagram.png" alt="instagram logo"
+            /></a>
+          </li>
+          <li>
+            <a href="www.linkedin.com"
+              ><img src="../images/linkedin.png" alt="linkedin logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="f-content">
+        <img
+          id="footer-img"
+          src="../images/da_munchies-no_txt.png"
+          alt="da munchies logo no text"
+        />
+      </div>
+
+      <p id="copyright">&copy Da Munchies 2023. All Rights Reserved.</p>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="../js/reserve.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!-- HTML - Gallery Page - Created by Juan Jacobo Florez Monroy -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css" />    
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <title>Da Munchies - Gallery</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img
+          src="../images/da_munchies2.png"
+          id="main-logo"
+          alt="munchies logo"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="reserve.html">Reserve a Table</a></li>
+          <li><a class="active" href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--<section class="main-img">
+        <div class="intro-content">
+          <h1>Gallery</h1>
+        </div>          
+      </section>-->
+      <!-- bxSlider -->
+      <div id="gallery" class="bxslider">
+        <div><img src="../images/gallery_page/bxslider_images/h_burger_with_fries.jpg" title="Hamburger with fries!" alt="burger with fries"/></div>
+        <div><img src="../images/gallery_page/bxslider_images/h_modern_coucine.jpg" title="Modern Coucine!" alt="modern coucine"/></div>
+        <div><img src="../images/gallery_page/bxslider_images/h_salad.jpg" title="Healthy Salads!" alt="salad"/></div>
+        <div><img src="../images/gallery_page/bxslider_images/h_meal_with_friends.jpg" title="Delicious meals with friends!" alt="meal with friends"/></div>
+        <div><img src="../images/gallery_page/bxslider_images/h_pizza.jpg" title="The best pizza!" alt="pizza"/></div>
+      </div>
+      <!-- Collage -->
+      <section id="collage">
+        <div class="div_img_collage grid_image_type1">
+          <img class="img_collage" src="../images/gallery_page/v_shrimp_pasta.jpg" alt="shrimp pasta">
+          <div class="text_centered">Shrimp Pasta</div>
+        </div>
+        <div class="div_img_collage grid_image_type2">
+          <img class="img_collage" src="../images/gallery_page/h_sushirolls.jpg" alt="sushirolls">
+          <div class="text_centered">Sushi Rolls</div>
+        </div>
+        <div class="div_img_collage grid_image_type3">
+          <img class="img_collage" src="../images/gallery_page/h_wine.jpg" alt="wine">
+          <div class="text_centered">Wine</div>
+        </div>
+        <div class="div_img_collage grid_image_type4">
+          <img class="img_collage" src="../images/gallery_page/v_pancake.jpg" alt="panckage">          
+          <div class="text_centered">Pancake</div>
+        </div>   
+        <div class="div_img_collage grid_image_type5">          
+          <img class="img_collage2" src="../images/gallery_page/h_chef_sprinkling_sesame_seeds.jpg" alt="chef sprinkling sesame seeds">          
+        </div>     
+        <div class="div_img_collage grid_image_type6">
+          <video class="vid_collage" autoplay loop muted>
+            <source src="https://res.cloudinary.com/dcu9jm5xe/video/upload/v1738759897/h_our_restaurant_vltear.mp4" type="video/mp4">
+            Your browser doesn't admit video tag.
+          </video>               
+        </div>        
+      </section>
+    </main>
+    <footer>
+      <div class="f-content">
+        <h3>About</h3>
+        <p>
+          Our meals are a fusion of different cuisines, each one carefully
+          crafted to satisfy your taste buds like never before.
+        </p>
+      </div>
+      <div class="f-content">
+        <h3>Quick Menu</h3>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="reserve.html">Reserve a Table</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="f-content">
+        <h3>Social Media</h3>
+        <ul class="socials">
+          <li>
+            <a href="www.facebook.com"
+              ><img src="../images/facebook.png" alt="facebook logo"
+            /></a>
+          </li>
+          <li>
+            <a href="www.twitter.com"
+              ><img src="../images/twitter.png" alt="twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a href="www.instagram.com"
+              ><img src="../images/instagram.png" alt="instagram logo"
+            /></a>
+          </li>
+          <li>
+            <a href="www.linkedin.com"
+              ><img src="../images/linkedin.png" alt="linkedin logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="f-content">
+        <img
+          id="footer-img"
+          src="../images/da_munchies-no_txt.png"
+          alt="da munchies logo no text"
+        />
+      </div>      
+      <p id="copyright">&copy Da Munchies 2023. All Rights Reserved.</p>
+    </footer>
+    <!-- Links to the libraries needed -->
+    <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/jquery.bxslider.min.js"></script>
+    <!-- Link to my own js file -->
+    <script src="../js/gallery.js"></script>
+  </body>
+</html>

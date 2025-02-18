@@ -1,0 +1,93 @@
+/* RESERVATION CONFIRMATION PAGE STYLES */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  color: #ac1f24;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #f8f8f8;
+  color: #333;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+td {
+  background-color: #ffffff;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 12px 25px;
+  background-color: #138215;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #0c5d10;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+  #content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
